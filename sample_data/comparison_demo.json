@@ -1,0 +1,805 @@
+{
+  "n_races": 20,
+  "scenarios": [
+    "dry_race",
+    "changing_weather",
+    "wet_race",
+    "safety_car_heavy",
+    "high_degradation"
+  ],
+  "strategies": [
+    "mdp_agent",
+    "utility_agent",
+    "reactive_rules",
+    "baseline_fixed"
+  ],
+  "baseline": "baseline_fixed",
+  "summary": [
+    {
+      "strategy": "mdp_agent",
+      "runs": 20,
+      "mean": 3971.94,
+      "std": 175.37,
+      "min": 3736.0,
+      "max": 4417.3,
+      "avg_pit_stops": 4.05,
+      "avg_replans": 11.1,
+      "win_rate": 70.0,
+      "time_saved": 65.85,
+      "consistency": 77.9,
+      "dnfs": 0,
+      "scenarios": {
+        "high_degradation": {
+          "mean": 3819.25,
+          "min": 3736.0,
+          "max": 4016.51
+        },
+        "dry_race": {
+          "mean": 3851.16,
+          "min": 3801.76,
+          "max": 3903.88
+        },
+        "wet_race": {
+          "mean": 4141.37,
+          "min": 3924.09,
+          "max": 4417.3
+        },
+        "changing_weather": {
+          "mean": 3969.4,
+          "min": 3936.68,
+          "max": 4014.72
+        },
+        "safety_car_heavy": {
+          "mean": 4078.51,
+          "min": 3954.14,
+          "max": 4341.16
+        }
+      }
+    },
+    {
+      "strategy": "utility_agent",
+      "runs": 20,
+      "mean": 3972.47,
+      "std": 177.21,
+      "min": 3735.05,
+      "max": 4388.61,
+      "avg_pit_stops": 5.35,
+      "avg_replans": 0.0,
+      "win_rate": 80.0,
+      "time_saved": 65.32,
+      "consistency": 77.7,
+      "dnfs": 0,
+      "scenarios": {
+        "high_degradation": {
+          "mean": 3805.37,
+          "min": 3735.05,
+          "max": 3955.97
+        },
+        "dry_race": {
+          "mean": 3836.79,
+          "min": 3774.94,
+          "max": 3899.35
+        },
+        "wet_race": {
+          "mean": 4138.5,
+          "min": 3883.32,
+          "max": 4388.61
+        },
+        "changing_weather": {
+          "mean": 3979.53,
+          "min": 3929.27,
+          "max": 4022.68
+        },
+        "safety_car_heavy": {
+          "mean": 4102.14,
+          "min": 3965.49,
+          "max": 4314.81
+        }
+      }
+    },
+    {
+      "strategy": "reactive_rules",
+      "runs": 20,
+      "mean": 4139.2,
+      "std": 251.36,
+      "min": 3765.46,
+      "max": 4644.72,
+      "avg_pit_stops": 5.9,
+      "avg_replans": 0.0,
+      "win_rate": 15.0,
+      "time_saved": -101.41,
+      "consistency": 69.6,
+      "dnfs": 0,
+      "scenarios": {
+        "high_degradation": {
+          "mean": 3896.19,
+          "min": 3765.46,
+          "max": 4177.22
+        },
+        "dry_race": {
+          "mean": 3891.24,
+          "min": 3817.7,
+          "max": 3988.6
+        },
+        "wet_race": {
+          "mean": 4415.51,
+          "min": 4140.69,
+          "max": 4644.72
+        },
+        "changing_weather": {
+          "mean": 4223.41,
+          "min": 4187.67,
+          "max": 4257.33
+        },
+        "safety_car_heavy": {
+          "mean": 4269.64,
+          "min": 4146.82,
+          "max": 4491.46
+        }
+      }
+    },
+    {
+      "strategy": "baseline_fixed",
+      "runs": 20,
+      "mean": 4037.79,
+      "std": 233.53,
+      "min": 3737.25,
+      "max": 4609.21,
+      "avg_pit_stops": 1.0,
+      "avg_replans": 0.0,
+      "win_rate": 0.0,
+      "time_saved": 0.0,
+      "consistency": 71.1,
+      "dnfs": 0,
+      "scenarios": {
+        "high_degradation": {
+          "mean": 3825.44,
+          "min": 3737.25,
+          "max": 4035.64
+        },
+        "dry_race": {
+          "mean": 3846.63,
+          "min": 3800.51,
+          "max": 3908.77
+        },
+        "wet_race": {
+          "mean": 4351.77,
+          "min": 4159.32,
+          "max": 4609.21
+        },
+        "changing_weather": {
+          "mean": 4031.38,
+          "min": 3945.39,
+          "max": 4164.71
+        },
+        "safety_car_heavy": {
+          "mean": 4133.7,
+          "min": 4022.04,
+          "max": 4417.26
+        }
+      }
+    }
+  ],
+  "per_race": [
+    {
+      "race_index": 1,
+      "seed": 1000,
+      "scenario": "dry_race",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3830.3969999999995,
+          "pit_stops": 2,
+          "position": 5,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3856.4890000000005,
+          "pit_stops": 4,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 3850.866,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 3858.044000000001,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 2,
+      "seed": 1001,
+      "scenario": "changing_weather",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3967.922,
+          "pit_stops": 4,
+          "position": 5,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3988.701,
+          "pit_stops": 7,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4256.068000000001,
+          "pit_stops": 10,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 4164.711999999999,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 3,
+      "seed": 1002,
+      "scenario": "wet_race",
+      "results": {
+        "mdp_agent": {
+          "total_time": 4215.869000000001,
+          "pit_stops": 3,
+          "position": 5,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 4252.829,
+          "pit_stops": 4,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4594.938000000001,
+          "pit_stops": 9,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 4432.493000000001,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 4,
+      "seed": 1003,
+      "scenario": "safety_car_heavy",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3954.138000000001,
+          "pit_stops": 4,
+          "position": 2,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3965.4900000000002,
+          "pit_stops": 5,
+          "position": 4,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4178.956999999999,
+          "pit_stops": 7,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 4033.1420000000007,
+          "pit_stops": 1,
+          "position": 4,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 5,
+      "seed": 1004,
+      "scenario": "high_degradation",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3752.0879999999997,
+          "pit_stops": 3,
+          "position": 4,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3757.812000000001,
+          "pit_stops": 4,
+          "position": 4,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 3808.8069999999993,
+          "pit_stops": 3,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 3737.246,
+          "pit_stops": 1,
+          "position": 3,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 6,
+      "seed": 1005,
+      "scenario": "dry_race",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3868.5940000000005,
+          "pit_stops": 3,
+          "position": 5,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3816.4020000000005,
+          "pit_stops": 4,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 3817.7000000000007,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 3819.187999999999,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 7,
+      "seed": 1006,
+      "scenario": "changing_weather",
+      "results": {
+        "mdp_agent": {
+          "total_time": 4014.7200000000007,
+          "pit_stops": 7,
+          "position": 4,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 4022.683000000001,
+          "pit_stops": 7,
+          "position": 4,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4192.5779999999995,
+          "pit_stops": 8,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 3999.446,
+          "pit_stops": 1,
+          "position": 4,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 8,
+      "seed": 1007,
+      "scenario": "wet_race",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3924.087,
+          "pit_stops": 2,
+          "position": 5,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3883.315000000001,
+          "pit_stops": 2,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4140.69,
+          "pit_stops": 5,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 4159.32,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 9,
+      "seed": 1008,
+      "scenario": "safety_car_heavy",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3989.3070000000002,
+          "pit_stops": 3,
+          "position": 5,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 4035.965000000001,
+          "pit_stops": 7,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4146.816,
+          "pit_stops": 5,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 4062.3590000000004,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 10,
+      "seed": 1009,
+      "scenario": "high_degradation",
+      "results": {
+        "mdp_agent": {
+          "total_time": 4016.5060000000008,
+          "pit_stops": 6,
+          "position": 5,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3955.966999999999,
+          "pit_stops": 4,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4177.223,
+          "pit_stops": 5,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 4035.639,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 11,
+      "seed": 1010,
+      "scenario": "dry_race",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3801.76,
+          "pit_stops": 2,
+          "position": 1,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3774.9359999999983,
+          "pit_stops": 6,
+          "position": 1,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 3907.8000000000006,
+          "pit_stops": 5,
+          "position": 3,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 3800.5059999999994,
+          "pit_stops": 1,
+          "position": 1,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 12,
+      "seed": 1011,
+      "scenario": "changing_weather",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3958.295,
+          "pit_stops": 5,
+          "position": 4,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3977.4569999999994,
+          "pit_stops": 9,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4187.667999999999,
+          "pit_stops": 10,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 3945.389,
+          "pit_stops": 1,
+          "position": 4,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 13,
+      "seed": 1012,
+      "scenario": "wet_race",
+      "results": {
+        "mdp_agent": {
+          "total_time": 4417.298000000001,
+          "pit_stops": 4,
+          "position": 5,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 4388.605999999999,
+          "pit_stops": 2,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4644.7210000000005,
+          "pit_stops": 5,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 4609.209000000001,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 14,
+      "seed": 1013,
+      "scenario": "safety_car_heavy",
+      "results": {
+        "mdp_agent": {
+          "total_time": 4341.16,
+          "pit_stops": 9,
+          "position": 5,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 4314.805,
+          "pit_stops": 7,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4491.463000000001,
+          "pit_stops": 8,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 4417.262000000001,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 15,
+      "seed": 1014,
+      "scenario": "high_degradation",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3772.394,
+          "pit_stops": 2,
+          "position": 4,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3772.6500000000005,
+          "pit_stops": 4,
+          "position": 4,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 3833.2749999999996,
+          "pit_stops": 3,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 3786.971000000001,
+          "pit_stops": 1,
+          "position": 4,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 16,
+      "seed": 1015,
+      "scenario": "dry_race",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3903.8799999999997,
+          "pit_stops": 4,
+          "position": 5,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3899.3519999999994,
+          "pit_stops": 4,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 3988.5959999999995,
+          "pit_stops": 4,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 3908.7659999999996,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 17,
+      "seed": 1016,
+      "scenario": "changing_weather",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3936.676,
+          "pit_stops": 7,
+          "position": 2,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3929.2729999999997,
+          "pit_stops": 8,
+          "position": 2,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4257.330000000001,
+          "pit_stops": 12,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 4015.9880000000003,
+          "pit_stops": 1,
+          "position": 4,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 18,
+      "seed": 1017,
+      "scenario": "wet_race",
+      "results": {
+        "mdp_agent": {
+          "total_time": 4008.216,
+          "pit_stops": 2,
+          "position": 5,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 4029.2450000000003,
+          "pit_stops": 4,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4281.679,
+          "pit_stops": 6,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 4206.071999999998,
+          "pit_stops": 1,
+          "position": 5,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 19,
+      "seed": 1018,
+      "scenario": "safety_car_heavy",
+      "results": {
+        "mdp_agent": {
+          "total_time": 4029.4240000000013,
+          "pit_stops": 7,
+          "position": 2,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 4092.2830000000004,
+          "pit_stops": 10,
+          "position": 5,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 4261.311000000001,
+          "pit_stops": 9,
+          "position": 5,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 4022.038,
+          "pit_stops": 1,
+          "position": 2,
+          "dnf": false
+        }
+      }
+    },
+    {
+      "race_index": 20,
+      "seed": 1019,
+      "scenario": "high_degradation",
+      "results": {
+        "mdp_agent": {
+          "total_time": 3735.996000000001,
+          "pit_stops": 2,
+          "position": 2,
+          "dnf": false
+        },
+        "utility_agent": {
+          "total_time": 3735.0500000000006,
+          "pit_stops": 5,
+          "position": 2,
+          "dnf": false
+        },
+        "reactive_rules": {
+          "total_time": 3765.457,
+          "pit_stops": 2,
+          "position": 2,
+          "dnf": false
+        },
+        "baseline_fixed": {
+          "total_time": 3741.9170000000004,
+          "pit_stops": 1,
+          "position": 2,
+          "dnf": false
+        }
+      }
+    }
+  ]
+}
